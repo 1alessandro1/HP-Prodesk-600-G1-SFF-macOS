@@ -6,6 +6,7 @@ This repository contains the necessary files and information to successfully boo
 | Component      | Brand                                     |
 |----------------|-------------------------------------------|
 | **CPU**        | `Intel Core i5-4590 @ 3.3 GHz`            |
+| **Chipset**    | `Intel Q85`                               |
 | **iGPU**       | `Intel HD Graphics 4600 - Haswell`        |
 | **Storage**    | `Crucual NVMe 250GB`                      |
 | **Audio**      | `Realtek ALC221 - layout 11`              |
