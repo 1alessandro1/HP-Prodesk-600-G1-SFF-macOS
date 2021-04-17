@@ -1,6 +1,18 @@
 # HP-Prodesk-600-G1-SFF-macOS
 This repository contains the necessary files and information to successfully boot macOS on this prebuilt PC. 
 
+## Specs
+
+| Component      | Brand                                     |
+|----------------|-------------------------------------------|
+| **CPU**        | `Intel Core i5-4590 @ 3.3 GHz`            |
+| **iGPU**       | `Intel HD Graphics 4600 - Haswell`        |
+| **Storage**    | `Crucual NVMe 250GB`                      |
+| **Audio**      | `Realtek ALC221 - layout 11`              |
+| **WiFi Card**  | `Not currently installed`                 |
+| **OS**         | `macOS Big Sur 11.2.3 (20D91)`            |
+| **BIOS**       | `2.78 - 29 April 2020`                    |
+
 ## Additional hidden BIOS settings
 The tool `setup_var` from [datasone](https://github.com/datasone/grub-mod-setup_var/releases/latest) can help you to setup this additional parameters to successfully boot macOS:
 
