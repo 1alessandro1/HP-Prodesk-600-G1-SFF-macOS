@@ -1,0 +1,167 @@
+      =========================================================
+
+                  DOSFLASH.EXE  version 1.15.01       
+
+      =========================================================
+ 
+
+The DOS Flash utility is designed to update the computer system firmware
+(BIOS) from a DOS, FreeDOS, or similar environment. Windows command line
+is not supported.
+
+The DOS Flash utility consists of the executable file (DOSFlash.exe) and a 
+driver file (FlshUefi.cpu) specific to updating the system BIOS. They must be
+present in the same directory. DOS Flash also supports updating the initial 
+graphics display logo to a custom image.
+
+
+
+BIOS VERSION UPDATE:
+____________________
+
+DOS Flash requires a BIOS binary image file included in a BIOS SoftPaq 
+release in order to update the System BIOS.  See the DOS Flash folder for the
+correct files.  Not all HP Desktop systems are compatible with this version of
+the DOS Flash utility.  If the utility is run on a system that does not 
+support it, an error message will say so.  The BIOS SoftPaq release package 
+for that system will include the correct DOS Flash tool (typically, 
+Flashbin.exe and flsh.cpu).
+
+DOS Flash can update a system BIOS without requiring the administrator to 
+enter a Setup password if the unit has not already been assigned a Setup 
+password.  However if a Setup password is set on the target PC, then DOS Flash
+will require password verification before allowing a BIOS update, or the 
+process will report an error. The Setup password must be provided in the 
+command line when the DOS Flash utility is executed, using the /p option. 
+See below for syntax description. 
+
+
+
+CUSTOM LOGO IMAGE UPDATE:
+_________________________
+
+DOS Flash allows replacing the standard HP logo image with a custom image 
+provided by the user. Valid image files are JPEG or uncompressed BMP (bitmap)
+images up to 1024 x 768 resolution.  Also, the maximum file size differs from
+system to system, but will be between 22KB and 32KB.  The command line switch 
+"/I " followed by the image filename will write the custom logo to the BIOS. 
+When using DOS Flash to change the logo, the System BIOS is not updated at the
+same time.  The custom image can be deleted (restoring the standard HP logo) 
+with the "/I delete" option.
+
+
+
+COMMAND LINE SYNTAX:
+____________________
+
+
+UPDATE SYSTEM BIOS:
+
+
+  dosflash [/p <password>] [/f flshuefi.cpu <BIOS family>]
+
+
+DOS Flash will search the current directory for the System BIOS binary. If
+more than one are present, the latest BIOS image file (highest version number) 
+compatible with the target PC will be used.
+
+The /f option is used when needing to suppress any user prompts, for instance
+when automating a mass deployment using Altiris. BIOS family is listed in BIOS
+Setup / System Information / System BIOS before the version number (e.g. L01),
+and is also the first part of the binary filename.
+
+
+UPDATE STARTUP IMAGE:
+
+
+  dosflash /I {<imagefile> | delete} 
+
+
+If the imagefile file size exceeds the maximum for the target PC, a File Too
+Large error is reported, along with the maximum file size supported for the
+system.
+
+
+
+USE CASES:
+__________
+
+
+dosflash
+   This will attempt to update the System BIOS. Assumes no BIOS Setup password
+      is set.
+
+
+dosflash /p Admin123  
+   This will attempt to update the System BIOS using “Admin123” as the BIOS
+      Setup password for authentication.
+
+
+dosflash /p Admin123 /I hplogo.jpg  
+   This will update the system startup logo using “hplogo.jpg” as the image,
+      and uses “Admin123” to authenticate the BIOS Setup password.
+
+
+dosflash /Image custom.jpg
+   This will update the system startup logo using “custom.jpg” as the image.
+      This syntax implies that there is no BIOS Setup password set.
+
+
+dosflash /I delete
+   This will delete a custom startup logo from the system. The default HP logo
+      will be used after reboot. This syntax implies that there is no BIOS
+      Setup password set.
+
+
+dosflash /I DELETE /P Admin123
+   This will delete a custom startup logo from the system. The default HP logo
+      will be used after reboot. Uses “Admin123” as the BIOS Setup password
+      for authentication.
+
+
+dosflash /f flshuefi.cpu L01
+   This will update the System BIOS with the binary in the current directory 
+      without pausing for user input. 
+
+
+dosflash /I custom.jpg /p Admin123 /f flshuefi.cpu L01
+   This will update the system startup logo using "custom.jpg" as the image, 
+      authenticating with a BIOS Setup password of "Admin123" and suppressing
+      prompts.
+
+
+
+ERROR LEVELS:
+_____________
+
+0  - No errors
+
+4  - Could not open input file
+
+16 - Unsupported system type
+
+44 - Could not open flshuefi.cpu
+
+45 - All other errors:  wrong password, file size too big, image dimensions 
+     too large
+
+
+CHANGE HISTORY:
+_______________
+
+Version 1.15.01
+- Fixed slow DOSFLASH response with certain USB Drives
+
+Version 1.15.00
+- Added Support for new ROM Families (i.e. K01)
+
+Version 1.14.00
+- Initial version
+
+
+_____________________________________________________________________________
+
+Copyright (c) 2011-2016 HP Development Company, L.P.
+
+Product names mentioned herein may be trademarks and/or registered trademarks 
+of their respective companies.
