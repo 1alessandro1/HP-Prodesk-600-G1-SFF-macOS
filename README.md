@@ -20,4 +20,6 @@ The tool `setup_var` from [datasone](https://github.com/datasone/grub-mod-setup_
 - DVMT GFX total mem: `setup_var 0x234 0x3` [MAX]
 - EHCI Hand-off: `setup_var 0x2 0x1` [Enabled]
 
+Unfortunately I was not able to unlock the `DVMT Pre-Allocated` (offset `0x233`) in order to increse it from `32MB` to someting higher like `64MB` or `128MB` as discussed [here](https://github.com/acidanthera/bugtracker/issues/1585)
+
 Note: if you don't apply the correct BIOS settings, you won't be able to boot.
