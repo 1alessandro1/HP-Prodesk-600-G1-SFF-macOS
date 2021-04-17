@@ -9,7 +9,7 @@ This repository contains the necessary files and information to successfully boo
 | **iGPU**       | `Intel HD Graphics 4600 - Haswell`        |
 | **Storage**    | `Crucual NVMe 250GB`                      |
 | **Audio**      | `Realtek ALC221 - layout 11`              |
-| **WiFi Card**  | `Not currently installed`                 |
+| **Ethernet**   | `Intel I217LM`                            |
 | **OS**         | `macOS Big Sur 11.2.3 (20D91)`            |
 | **BIOS**       | `2.78 - 29 April 2020`                    |
 
