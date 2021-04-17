@@ -2,6 +2,17 @@
 DOS Flash Utility
 =================
 
+
+HOW TO USE: 
+
+Download rufus or unetbootin to make a FreeDOS bootable USB. Copy the contents of this specific directory to the root of your new FreeDOS USB, boot from the external USB by pressing F9, and then once you change your directory to C:\, just type: 
+
+dosflash 
+
+and follow the steps which will guide you to update your firmware
+
+
+
 DOSFlash.exe - Use locally or with a Preboot eXecution Environment (PXE) 
                management application (e.g. Altiris eXpress) to update or
                restore the System BIOS. 
@@ -26,7 +37,3 @@ SHA256.txt
 README.TXT (this file)
 
 Copyright (c) 2011-2016 HP Development Company, L.P.
-
-
-
-
