@@ -36,7 +36,7 @@ Instructions: copy `modGRUBShell.efi` to a FAT32 partition and save it under the
 - DVMT GFX total mem: `setup_var 0x234 0x3` [MAX]
 - EHCI Hand-off: `setup_var 0x2 0x1` [Enabled]
 
-Unfortunately I was not able to unlock the `DVMT Pre-Allocated` (offset `0x233`) in order to increse it from `32MB` to someting higher like `64MB` or `128MB` as discussed [here](https://github.com/acidanthera/bugtracker/issues/1585) so the max achievable resolution is QHD, 2560x1440
+Unfortunately I was not able to unlock the `DVMT Pre-Allocated` (offset `0x233`) in order to increse it from `32MB` to someting higher like `64MB` or `128MB` as discussed [here](https://github.com/acidanthera/bugtracker/issues/1585) so the max achievable resolution is QHD, 2560x1440 with the iGPU under macOS, but in Linux/Windows everythig is correct even at 3840x2160
 
 **Note**: if you don't apply the correct BIOS settings, you won't be able to boot.
 
