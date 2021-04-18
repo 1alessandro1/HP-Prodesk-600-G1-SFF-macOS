@@ -67,9 +67,10 @@ For USB creation methods which use `createinstallmedia`, any version of macOS (B
 ## Credits:
 
 * [Apple](https://apple.com) for macOS
-* [Acidanthera](https://github.com/Acidanthera) for OpenCore and Lilu-based kexts 
+* [Mieze](https://github.com/Mieze) for IntelMausi LAN driver
 * [dreamwhite](https://github.com/dreamwhite) for helping me with `SSDT-USB.aml` which does not require DSDT patching
 * [Gengik84](https://www.macos86.it/profile/1-gengik84/) for the `GENG` method and for the original custom DSDT
 * [dortania](https://github.com/dortania) team for its detailed guides
 * [Corpnewt](https://github.com/CorpNewt) for SSDTTime and [fewtarius](https://github.com/fewtarius) for CPUFriend fork
-* [Mieze](https://github.com/Mieze) for IntelMausi LAN driver
+* [Acidanthera](https://github.com/Acidanthera) for OpenCore and Lilu-based kexts 
+
