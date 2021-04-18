@@ -31,7 +31,7 @@ Unfortunately I was not able to unlock the `DVMT Pre-Allocated` (offset `0x233`)
 ## Credits:
 
 * [Apple](https://apple.com) for macOS
-* [Acidanthera](https://github.com/Acidanthera) for some Lilu-based kexts
+* [Acidanthera](https://github.com/Acidanthera) for Lilu-based kexts
 * [dreamwhite](https://github.com/dreamwhite) for helping me with `SSDT-USB.aml` which does not require DSDT patching
 * [Gengik84](https://www.macos86.it/profile/1-gengik84/) for the `GENG` method and for the original custom DSDT
 * [dortania](https://github.com/dortania) team for its detailed guides
