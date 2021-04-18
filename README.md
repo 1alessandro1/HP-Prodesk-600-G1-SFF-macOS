@@ -27,3 +27,11 @@ Instructions: copy `modGRUBShell.efi` to a FAT32 partition and save it under the
 Unfortunately I was not able to unlock the `DVMT Pre-Allocated` (offset `0x233`) in order to increse it from `32MB` to someting higher like `64MB` or `128MB` as discussed [here](https://github.com/acidanthera/bugtracker/issues/1585)
 
 Note: if you don't apply the correct BIOS settings, you won't be able to boot.
+
+* [Apple](https://apple.com) for macOS
+* [Acidanthera](https://github.com/Acidanthera) for some Lilu-based kexts
+* [dreamwhite](https://github.com/dreamwhite) for helping me with `SSDT-USB.aml` which does not require DSDT patching
+* [Gengik84](https://www.macos86.it/profile/1-gengik84/) for the `GENG` method and for the original custom DSDT
+* [dortania](https://github.com/dortania) team for its detailed guides
+* [Corpnewt](https://github.com/CorpNewt) for SSDTTime and [fewtarius](https://github.com/fewtarius) for CPUFriend fork
+* [Mieze](https://github.com/Mieze) for IntelMausi LAN driver
