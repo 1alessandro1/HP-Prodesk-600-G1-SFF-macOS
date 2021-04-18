@@ -19,13 +19,13 @@ This repository contains the necessary files and information to successfully boo
 | **BIOS**       | `2.78 - 29 April 2020`                    |
 
 ## Important notes
-- In the config.plist, section `PlatformInfo > Generic`, the following fields are currently edited with "CHANGEME" in order to force the user to generate his own serials. Refer to this guide to [know how](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#platforminfo). 
+- In the `config.plist`, section `PlatformInfo > Generic`, the following fields are currently edited with "CHANGEME" in order to force the user to generate his own serials. Refer to this guide to [know how](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#platforminfo). 
   - `MLB`
   - `ROM`
   - `SystemSerialNumber` 
   - `SystemUUID`
 
-- If you are planning an NVMe device on the PCI-E x16 or x1 slots, note that on Aptio IV firmware, NvmeExpressDxe is not present, check the `Drivers` section in the `EFI/OC/Drivers` path of this repository, and don't forget to add that to the `ConnectDrivers` section in OpenCore's config.plist
+- If you are planning an NVMe device on the PCI-E x16 or x1 slots, note that on Aptio IV firmware, NvmeExpressDxe is not present, check the `Drivers/` folder under `EFI/OC/` path of this repository, and don't forget to add `NvmeExpressDxe.efi` that to the `ConnectDrivers` section in OpenCore's `config.plist`. If you don't plan to use an NVMe, you can skip this and remove NvmeExpressDxe from the `Drivers/` folder and from the `config.plist`
 
 
 ## Additional hidden BIOS settings
@@ -37,7 +37,7 @@ Instructions: copy `modGRUBShell.efi` to a FAT32 partition and save it under the
 - DVMT GFX total mem: `setup_var 0x234 0x3` [MAX]
 - EHCI Hand-off: `setup_var 0x2 0x1` [Enabled]
 
-Unfortunately I was not able to unlock the `DVMT Pre-Allocated` (offset `0x233`) in order to increse it from `32MB` to someting higher like `64MB` or `128MB` as discussed [here](https://github.com/acidanthera/bugtracker/issues/1585) so the max achievable resolution is QHD, 2560x1440 with the iGPU under macOS, but in Linux/Windows everythig is correct even at 3840x2160
+Unfortunately I was not able to unlock the `DVMT Pre-Allocated` (offset `0x233`) in order to increse it from `32MB` to someting higher like `64MB` or `128MB` as discussed [here](https://github.com/acidanthera/bugtracker/issues/1585) so the max achievable resolution is *QHD*, `2560x1440` with the iGPU under macOS, but in Linux/Windows everythig is correct even at `3840x2160`
 
 **Note**: if you don't apply the correct BIOS settings, you won't be able to boot.
 
