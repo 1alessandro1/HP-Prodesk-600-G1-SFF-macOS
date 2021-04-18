@@ -25,7 +25,7 @@ This repository contains the necessary files and information to successfully boo
   - `SystemSerialNumber` 
   - `SystemUUID`
 
-- If you are planning to use the built-in NVMe, note that on Aptio IV firmware, NvmeExpressDxe is not present, check the `Drivers` section in the EFI/OC/Drivers path
+- If you are planning to use the built-in NVMe, note that on Aptio IV firmware, NvmeExpressDxe is not present, check the `Drivers` section in the `EFI/OC/Drivers` path of this repository, and don't forget to add that to the `ConnectDrivers` section in OpenCore's config.plist
 
 
 ## Additional hidden BIOS settings
