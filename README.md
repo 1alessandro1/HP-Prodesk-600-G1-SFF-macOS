@@ -1,6 +1,4 @@
-# HP-Prodesk-600-G1-SFF-macOS
-
-# HP Pavilion CE-2072NL - MacBookPro15,2
+# HP-Prodesk-600-G1-SFF-macOS - iMac15,1
 
 This repository contains the necessary files and information to successfully boot macOS on this prebuilt PC. 
 - Bootloader version: **OpenCore 0.6.8**
