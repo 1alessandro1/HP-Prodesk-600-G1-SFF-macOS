@@ -25,6 +25,9 @@ This repository contains the necessary files and information to successfully boo
   - `SystemSerialNumber` 
   - `SystemUUID`
 
+- If you are planning to use the built-in NVMe, note that on Aptio IV firmware, NvmeExpressDxe is not present, check the `Drivers` section in the EFI/OC/Drivers path
+
+
 ## Additional hidden BIOS settings
 The tool `setup_var` from [datasone](https://github.com/datasone/grub-mod-setup_var/releases/latest) can help you to setup this additional parameters to successfully boot macOS:
 
