@@ -28,6 +28,10 @@ This repository contains the necessary files and information to successfully boo
 - If you are planning an NVMe device on the PCI-E x16 or x1 slots, note that on Aptio IV firmware, NvmeExpressDxe is not present, check the `Drivers/` folder under `EFI/OC/` path of this repository, and don't forget to add `NvmeExpressDxe.efi` that to the `ConnectDrivers` section in OpenCore's `config.plist`. If you don't plan to use an NVMe, you can skip this and remove NvmeExpressDxe from the `Drivers/` folder and from the `config.plist`
 
 
+## BIOS Settings
+
+There are screenshots to document what are the necessary BIOS settings for this PC, check them [here](https://github.com/1alessandro1/HP-Prodesk-600-G1-SFF-macOS/tree/main/Bios-Dumps/Pictures-Settings) or by cloning the repository 
+
 ## Additional hidden BIOS settings
 The tool `setup_var` from [datasone](https://github.com/datasone/grub-mod-setup_var/releases/latest) can help you to setup this additional parameters to successfully boot macOS:
 
