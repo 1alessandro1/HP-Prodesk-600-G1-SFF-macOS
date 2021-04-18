@@ -20,11 +20,17 @@ This repository contains the necessary files and information to successfully boo
 | **OS**         | `macOS Big Sur 11.2.3 (20D91)`            |
 | **BIOS**       | `2.78 - 29 April 2020`                    |
 
+## Important notes
+- In the config.plist, section `PlatformInfo > Generic`, the following fields are currently edited with "CHANGEME" in order to force the user to generate his own serials. Refer to this guide to [know how](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#platforminfo). 
+  - `MLB`
+  - `ROM`
+  - `SystemSerialNumber` 
+  - `SystemUUID`
+
 ## Additional hidden BIOS settings
 The tool `setup_var` from [datasone](https://github.com/datasone/grub-mod-setup_var/releases/latest) can help you to setup this additional parameters to successfully boot macOS:
 
 Instructions: copy `modGRUBShell.efi` to a FAT32 partition and save it under the directory `ESP/EFI/BOOT/` as `BOOTx64.efi`, your firmware will target that `.efi` driver to boot, and once you reached the GRUB command line, type the following (these offsets apply to this firmware in particular with this BIOS version, 2.78)
-
 
 - CFG Lock: `setup_var 0x4A3 0x00` [Disabled]
 - DVMT GFX total mem: `setup_var 0x234 0x3` [MAX]
