@@ -1,5 +1,11 @@
 # HP-Prodesk-600-G1-SFF-macOS
+
+# HP Pavilion CE-2072NL - MacBookPro15,2
+
 This repository contains the necessary files and information to successfully boot macOS on this prebuilt PC. 
+- Bootloader version: **OpenCore 0.6.8**
+- Kexts version: everything up-to-date with the latest version (check the links below)
+- macOS version: [Big Sur 11.2.3](https://www.apple.com/macos/big-sur) - Release channel
 
 ## Specs
 
@@ -28,10 +34,33 @@ Unfortunately I was not able to unlock the `DVMT Pre-Allocated` (offset `0x233`)
 
 **Note**: if you don't apply the correct BIOS settings, you won't be able to boot.
 
+### Drivers
+
+Must have to boot Big Sur:
+
+* OpenRuntime.efi (bundled in OpenCore package)
+* And nothing else (if you created the USB with [this method](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install-recovery.html#legacy-macos-online-method))
+
+For USB creation methods which use `createinstallmedia`, any version of macOS (Big Sur, Catalina etc) may require add: 
+
+* [HfsPlus.efi](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi) (in order to let OpenCore see the HFS partition created by the tool)
+
+
+### Kexts
+
+* [AppleALC](https://github.com/acidanthera/AppleALC/releases/latest)
+* [CPUFriend](https://github.com/acidanthera/CPUFriend/releases/latest)
+* [Lilu](https://github.com/acidanthera/Lilu/releases/latest)
+* [NVMeFix](https://github.com/acidanthera/NVMeFix/releases/latest)
+* [IntelMausi](https://github.com/acidanthera/IntelMausi/releases/latest)
+* [SMCProcessor](https://github.com/acidanthera/VirtualSMC/releases/latest) - shipped inside **VirtualSMC**
+* [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases/latest) 
+* [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases/latest)
+
 ## Credits:
 
 * [Apple](https://apple.com) for macOS
-* [Acidanthera](https://github.com/Acidanthera) for Lilu-based kexts
+* [Acidanthera](https://github.com/Acidanthera) for OpenCore and Lilu-based kexts 
 * [dreamwhite](https://github.com/dreamwhite) for helping me with `SSDT-USB.aml` which does not require DSDT patching
 * [Gengik84](https://www.macos86.it/profile/1-gengik84/) for the `GENG` method and for the original custom DSDT
 * [dortania](https://github.com/dortania) team for its detailed guides
