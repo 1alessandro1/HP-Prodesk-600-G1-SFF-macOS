@@ -40,7 +40,7 @@ Instructions: copy `modGRUBShell.efi` to a FAT32 partition and save it under the
 - CFG Lock: `setup_var 0x4A3 0x00` [Disabled]
 - DVMT GFX total mem: `setup_var 0x234 0x3` [MAX]
 - EHCI Hand-off: `setup_var 0x2 0x1` [Enabled]
-- Serial ports:
+- Serial ports: [Disable All]
   - (Serial Port A) `setup_var 0x13 0x0`
   - (Serial Port B) `setup_var 0x15 0x0`
   - (Serial Port C) `setup_var 0x17 0x0`
