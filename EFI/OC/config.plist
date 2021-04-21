@@ -211,51 +211,113 @@
 			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>
 				<key>AAPL,current-available</key>
-				<data>NAgAAA==</data>
+				<data>
+				NAgAAA==
+				</data>
 				<key>AAPL,current-extra</key>
-				<data>mAgAAA==</data>
+				<data>
+				HAwAAA==
+				</data>
 				<key>AAPL,current-extra-in-sleep</key>
-				<data>QAYAAA==</data>
+				<data>
+				HAwAAA==
+				</data>
 				<key>AAPL,max-port-current-in-sleep</key>
-				<data>NAgAAA==</data>
+				<data>
+				NAgAAA==
+				</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1A,0x0)</key>
 			<dict>
 				<key>AAPL,current-available</key>
-				<data>NAgAAA==</data>
+				<data>
+				NAgAAA==
+				</data>
 				<key>AAPL,current-extra</key>
-				<data>jAoAAA==</data>
+				<data>
+				jAoAAA==
+				</data>
 				<key>AAPL,current-extra-in-sleep</key>
-				<data>NAgAAA==</data>
-				<key>AAPL,current-in-sleep</key>
-				<data>6AMAAA==</data>
+				<data>
+				jAoAAA==
+				</data>
+				<key>AAPL,device-internal</key>
+				<data>
+				AgAAAA==
+				</data>
 				<key>AAPL,max-port-current-in-sleep</key>
-				<data>jAoAAA==</data>
+				<data>
+				NAgAAA==
+				</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1B,0x0)</key>
 			<dict>
 				<key>layout-id</key>
-				<data>CwAAAA==</data>
+				<data>
+				CwAAAA==
+				</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1D,0x0)</key>
 			<dict>
 				<key>AAPL,current-available</key>
-				<data>NAgAAA==</data>
+				<data>
+				NAgAAA==
+				</data>
 				<key>AAPL,current-extra</key>
-				<data>jAoAAA==</data>
+				<data>
+				jAoAAA==
+				</data>
 				<key>AAPL,current-extra-in-sleep</key>
-				<data>NAgAAA==</data>
-				<key>AAPL,current-in-sleep</key>
-				<data>6AMAAA==</data>
+				<data>
+				jAoAAA==
+				</data>
+				<key>AAPL,device-internal</key>
+				<data>
+				AgAAAA==
+				</data>
 				<key>AAPL,max-port-current-in-sleep</key>
-				<data>jAoAAA==</data>
+				<data>
+				NAgAAA==
+				</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AwAiDQ==</data>
+				<data>
+				AwAiDQ==
+				</data>
 				<key>device-id</key>
-				<data>EgQAAA==</data>
+				<data>
+				EgQAAA==
+				</data>
+				<key>framebuffer-con0-alldata</key>
+				<data>
+				AQUJAAAEAACHAAAA
+				</data>
+				<key>framebuffer-con0-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con1-alldata</key>
+				<data>
+				AgQKAAAEAACHAAAA
+				</data>
+				<key>framebuffer-con1-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con2-alldata</key>
+				<data>
+				AwYIABAAAAARAAAA
+				</data>
+				<key>framebuffer-con2-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-patch-enable</key>
+				<data>
+				AQAAAA==
+				</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
