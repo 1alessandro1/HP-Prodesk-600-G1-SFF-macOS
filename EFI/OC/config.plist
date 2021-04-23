@@ -16,11 +16,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Conflicting IRQ from legacy devices</string>
+				<string>Conflicting IRQs from legacy devices</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-HPET-DISABLE.aml</string>
+				<string>SSDT-HPET.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -102,6 +102,36 @@
 				<data></data>
 				<key>Replace</key>
 				<data>RUgwMg==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>HPET _CRS to XCRS Rename</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>BV9DUlM=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>BVhDUlM=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -211,113 +241,72 @@
 			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>
 				<key>AAPL,current-available</key>
-				<data>
-				NAgAAA==
-				</data>
+				<data>NAgAAA==</data>
 				<key>AAPL,current-extra</key>
-				<data>
-				HAwAAA==
-				</data>
+				<data>HAwAAA==</data>
 				<key>AAPL,current-extra-in-sleep</key>
-				<data>
-				HAwAAA==
-				</data>
+				<data>HAwAAA==</data>
 				<key>AAPL,max-port-current-in-sleep</key>
-				<data>
-				NAgAAA==
-				</data>
+				<data>NAgAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1A,0x0)</key>
 			<dict>
 				<key>AAPL,current-available</key>
-				<data>
-				NAgAAA==
-				</data>
+				<data>NAgAAA==</data>
 				<key>AAPL,current-extra</key>
-				<data>
-				jAoAAA==
-				</data>
+				<data>jAoAAA==</data>
 				<key>AAPL,current-extra-in-sleep</key>
-				<data>
-				jAoAAA==
-				</data>
+				<data>jAoAAA==</data>
 				<key>AAPL,device-internal</key>
-				<data>
-				AgAAAA==
-				</data>
+				<data>AgAAAA==</data>
 				<key>AAPL,max-port-current-in-sleep</key>
-				<data>
-				NAgAAA==
-				</data>
+				<data>NAgAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1B,0x0)</key>
 			<dict>
 				<key>layout-id</key>
-				<data>
-				CwAAAA==
-				</data>
+				<data>CwAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1D,0x0)</key>
 			<dict>
 				<key>AAPL,current-available</key>
-				<data>
-				NAgAAA==
-				</data>
+				<data>NAgAAA==</data>
 				<key>AAPL,current-extra</key>
-				<data>
-				jAoAAA==
-				</data>
+				<data>jAoAAA==</data>
 				<key>AAPL,current-extra-in-sleep</key>
-				<data>
-				jAoAAA==
-				</data>
+				<data>jAoAAA==</data>
 				<key>AAPL,device-internal</key>
-				<data>
-				AgAAAA==
-				</data>
+				<data>AgAAAA==</data>
 				<key>AAPL,max-port-current-in-sleep</key>
-				<data>
-				NAgAAA==
-				</data>
+				<data>NAgAAA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
+			<dict>
+				<key>compatible</key>
+				<string>pci8086,8c44</string>
+				<key>device-id</key>
+				<data>RIwAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>
-				AwAiDQ==
-				</data>
+				<data>AwAiDQ==</data>
 				<key>device-id</key>
-				<data>
-				EgQAAA==
-				</data>
+				<data>EgQAAA==</data>
 				<key>framebuffer-con0-alldata</key>
-				<data>
-				AQUJAAAEAACHAAAA
-				</data>
+				<data>AQUJAAAEAACHAAAA</data>
 				<key>framebuffer-con0-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-alldata</key>
-				<data>
-				AgQKAAAEAACHAAAA
-				</data>
+				<data>AgQKAAAEAACHAAAA</data>
 				<key>framebuffer-con1-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con2-alldata</key>
-				<data>
-				AwYIABAAAAARAAAA
-				</data>
+				<data>AwYIABAAAAARAAAA</data>
 				<key>framebuffer-con2-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-patch-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -639,7 +628,7 @@
 				<key>DefaultBackgroundColor</key>
 				<data>AAAAAA==</data>
 				<key>UIScale</key>
-				<data>Ag==</data>
+				<data>AQ==</data>
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
