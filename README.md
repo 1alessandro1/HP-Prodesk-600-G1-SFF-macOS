@@ -1,9 +1,9 @@
 # HP Prodesk 600-G1 SFF - iMac15,1
 
 This repository contains the necessary files and information to successfully boot macOS on this prebuilt PC. 
-- Bootloader version: **OpenCore 0.6.8**
+- Bootloader version: **OpenCore 0.6.9**
 - Kexts version: everything up-to-date with the latest version (check the links below)
-- macOS version: [Big Sur 11.2.3](https://www.apple.com/macos/big-sur) - Release channel
+- macOS version: [Big Sur 11.3.1](https://www.apple.com/macos/big-sur) - Release channel
 
 ## Specs
 
@@ -15,7 +15,7 @@ This repository contains the necessary files and information to successfully boo
 | **Storage**    | `Crucual NVMe 250GB`                      |
 | **Audio**      | `Realtek ALC221 - layout 11`              |
 | **Ethernet**   | `Intel I217LM`                            |
-| **OS**         | `macOS Big Sur 11.2.3 (20D91)`            |
+| **OS**         | `macOS Big Sur 11.3.1 (20E241)`           |
 | **BIOS**       | `2.78 - 29 April 2020`                    |
 
 ## Important notes
@@ -82,4 +82,3 @@ For USB creation methods which use `createinstallmedia`, any version of macOS (B
 * [dortania](https://github.com/dortania) team for its detailed guides
 * [Corpnewt](https://github.com/CorpNewt) for SSDTTime and [fewtarius](https://github.com/fewtarius) for CPUFriend fork
 * [Acidanthera](https://github.com/Acidanthera) for OpenCore and Lilu-based kexts 
-
