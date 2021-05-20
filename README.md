@@ -4,7 +4,8 @@ This repository contains the necessary files and information to successfully boo
 - Bootloader version: **OpenCore 0.6.9**
 - Kexts version: everything up-to-date with the latest version (check the links below)
 - Current macOS version: [Big Sur 11.3.1](https://www.apple.com/macos/big-sur) - Release channel
-- With a different SMBIOS, e.g. `iMac14,4` you [can install](https://youtu.be/o6cdezPEF3A) up to OS X Mavericks (10.9) 
+- With a different SMBIOS, e.g. `iMac14,4` you [can install](https://youtu.be/o6cdezPEF3A) up to OS X Mavericks (10.9)
+- With `IntelSnowMausi.kext` now present in the Kext folder you can even try macOS 10.8 which is the lowest supported by most kexts (Darwin 12.0.0)
 
 ## Specs
 
