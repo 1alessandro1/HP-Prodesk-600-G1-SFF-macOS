@@ -6,7 +6,7 @@ This repository contains the necessary files and information to successfully boo
 - Current macOS version: [Big Sur 11.3.1](https://www.apple.com/macos/big-sur) - Release channel
 - I chose `iMac15,1` since provides support for Big Sur and is the closest to the CPU model (i5 4590 is installed [on an official Mac](https://everymac.com/systems/apple/imac/specs/imac-core-i5-3.3-27-inch-aluminum-retina-5k-mid-2015-specs.html))
 - With a different SMBIOS, e.g. `iMac14,4`, which supports even lower versions of macOS, you [can install](https://youtu.be/o6cdezPEF3A) up to OS X Mavericks (10.9)
-- With `IntelSnowMausi.kext` now present in the Kext folder you can even try macOS 10.8 which is the lowest supported by most kexts (Darwin 12.0.0)
+- With `IntelSnowMausi.kext` now present in the Kext folder with the correct `MinKernel/MaxKernel` values you can even try macOS 10.8 which is the lowest supported by most kexts (Darwin 12.0.0)
 
 ## Specs
 
@@ -58,12 +58,7 @@ Unfortunately I was not able to unlock the `DVMT Pre-Allocated` (offset `0x233`)
 Must have to boot Big Sur:
 
 * OpenRuntime.efi (bundled in OpenCore package)
-* And nothing else (if you created the USB with [this method](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install-recovery.html#legacy-macos-online-method))
-
-For USB creation methods which use `createinstallmedia`, any version of macOS (Big Sur, Catalina etc) may require add: 
-
-* [HfsPlus.efi](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi) (in order to let OpenCore see the HFS partition created by the tool)
-
+* HfsPlus.efi (if you created the USB with [this method](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install-recovery.html#legacy-macos-online-method) or with `createinstallmedia`) and can be found either in the `OC/Drivers` folder of this repository or in [acidanthera/OcBinaryData]((https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi))
 
 ### Kexts
 
