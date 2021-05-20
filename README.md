@@ -3,7 +3,8 @@
 This repository contains the necessary files and information to successfully boot macOS on this prebuilt PC. 
 - Bootloader version: **OpenCore 0.6.9**
 - Kexts version: everything up-to-date with the latest version (check the links below)
-- macOS version: [Big Sur 11.3.1](https://www.apple.com/macos/big-sur) - Release channel
+- Current macOS version: [Big Sur 11.3.1](https://www.apple.com/macos/big-sur) - Release channel
+- With a different SMBIOS, e.g. `iMac14,4` you can arrive up to OS X Mavericks (10.9)
 
 ## Specs
 
