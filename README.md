@@ -22,6 +22,14 @@ This repository contains the necessary files and information to successfully boo
 | **BIOS**       | `2.78 - 29 April 2020`                    |
 
 ## Important notes
+
+
+### macOS Monterey support
+- macOS Monterey support is present (you should update every kext to the `master` version) and for the SMBIOS you can choose to boot with `iMac15,1` but you'll need to add `-no_compat_check` since it is now unsupported on macOS 12. However, if you created the USB with `createinstallmedia` you are able to install macOS 12 with just the boot-argument mentioned before. If you want to skip that and install though `macOS recovery` with the folder `com.apple.recovery.boot` then you should use a different SMBIOS, `iMac16,1`. Performance is the same, tested with Geekbench and others.
+
+
+### Serial numbers info
+
 - In the `config.plist`, section `PlatformInfo > Generic`, the following fields are currently edited with "CHANGEME" in order to force the user to generate his own serials. Refer to this guide to [know how](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#platforminfo). 
   - `MLB`
   - `ROM`
