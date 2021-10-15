@@ -18,8 +18,11 @@ This repository contains the necessary files and information to successfully boo
 | **Storage**    | `Crucual NVMe 250GB`                      |
 | **Audio**      | `Realtek ALC221 - layout 11`              |
 | **Ethernet**   | `Intel I217LM`                            |
-| **OS**         | `macOS Big Sur 11.6 (20G165)`             |
+| **OS**         | `macOS Big Sur 11.6 (20G165)` - `macOS Monterey 12.0 Beta10 (21A5552a)`|
 | **BIOS**       | `2.78 - 29 April 2020`                    |
+
+![Screenshot 2021-10-15 at 18 51 15](https://user-images.githubusercontent.com/46293832/137524454-b706f5fb-4452-44f2-ade1-602b19fde739.png)
+
 
 ## Important notes
 
