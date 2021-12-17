@@ -1,8 +1,6 @@
 # HP Prodesk 600 G1 SFF - iMac14,4 (for 10.9) / iMac15,1 / iMac16,1 (for Monterey)
 
-
-![Screenshot 2021-10-15 at 18 51 15](https://user-images.githubusercontent.com/46293832/137524454-b706f5fb-4452-44f2-ade1-602b19fde739.png)
-
+![Screenshot 2021-12-17 at 10 46 33](https://user-images.githubusercontent.com/46293832/146528009-70be145c-e0c6-41af-8395-52caa7662875.png)
 
 This repository contains the necessary files and information to successfully boot macOS on this prebuilt PC. 
 - Bootloader version: **OpenCore 0.7.6**
