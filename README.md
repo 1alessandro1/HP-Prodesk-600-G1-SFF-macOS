@@ -5,7 +5,7 @@
 
 
 This repository contains the necessary files and information to successfully boot macOS on this prebuilt PC. 
-- Bootloader version: **OpenCore 0.7.4**
+- Bootloader version: **OpenCore 0.7.6**
 - Kexts version: everything up-to-date with the latest version (check the links below)
 - Current macOS version: [Big Sur 11.6](https://www.apple.com/macos/big-sur) - Release channel
 - I chose `iMac15,1` since provides support for Big Sur and is the closest to the CPU model (i5 4590 is installed [on an official Mac](https://everymac.com/systems/apple/imac/specs/imac-core-i5-3.3-27-inch-aluminum-retina-5k-mid-2015-specs.html))
@@ -22,7 +22,7 @@ This repository contains the necessary files and information to successfully boo
 | **Storage**    | `Crucual NVMe 250GB`                      |
 | **Audio**      | `Realtek ALC221 - layout 11`              |
 | **Ethernet**   | `Intel I217LM`                            |
-| **OS**         | `macOS Big Sur 11.6 (20G165)` - `macOS Monterey 12.0 Beta10 (21A5552a)`|
+| **OS**         | `macOS Monterey 12.2 (21D5025f)`          |
 | **BIOS**       | `2.78 - 29 April 2020`                    |
 
 
