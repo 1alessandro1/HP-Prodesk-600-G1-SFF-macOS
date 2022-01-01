@@ -69,10 +69,10 @@ Unfortunately I was not able to unlock the `DVMT Pre-Allocated` (offset `0x233`)
 
 ### Drivers
 
-Must have to boot Big Sur:
+Must have to boot:
 
-* HfsPlus.efi (if you created the USB with [this method](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install-recovery.html#legacy-macos-online-method) or with `createinstallmedia`) and can be found either in the `OC/Drivers` folder of this repository or in [acidanthera/OcBinaryData]((https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi))
-* OpenRuntime.efi (bundled in OpenCore package)
+* HfsPlus.efi (if you created the USB with [this method](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install-recovery.html#legacy-macos-online-method) or with `createinstallmedia`) and can be found either in the `OC/Drivers` folder of this repository or in [acidanthera/OcBinaryData](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi)
+* OpenRuntime.efi (bundled in [OpenCore package](https://github.com/acidanthera/OpenCorePkg/releases/latest))
 
 Optional Drivers:
 * NvmExpressDxe.efi (bundled in OpenCore package) for those of you who opt to install an NVMe to a PCIE to M.2 converter, Intel `7/8 Series` chipsets do not have this in their firmware
