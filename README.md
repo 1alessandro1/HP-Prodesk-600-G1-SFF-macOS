@@ -71,7 +71,7 @@ Unfortunately I was not able to unlock the `DVMT Pre-Allocated` (offset `0x233`)
 
 Must have to boot:
 
-* HfsPlus.efi (if you created the USB with [this method](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install-recovery.html#legacy-macos-online-method) or with `createinstallmedia`) and can be found either in the `OC/Drivers` folder of this repository or in [acidanthera/OcBinaryData](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi)
+* HfsPlus.efi (if you created the USB with [this method](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install-recovery.html#legacy-macos-online-method) or with `createinstallmedia`) and can be found either in the [OC/Drivers](https://github.com/1alessandro1/HP-Prodesk-600-G1-SFF-macOS/tree/main/EFI/OC/Drivers) folder of this repository or in [acidanthera/OcBinaryData](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi)
 * OpenRuntime.efi (bundled in [OpenCore package](https://github.com/acidanthera/OpenCorePkg/releases/latest))
 
 Optional Drivers:
