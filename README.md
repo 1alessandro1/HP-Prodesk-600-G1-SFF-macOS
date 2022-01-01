@@ -45,6 +45,21 @@ This repository contains the necessary files and information to successfully boo
 
 ## BIOS Settings
 
+Update 01/01/2022:
+
+Since HP has removed the option to download the latest BIOS from their website, and they only allow to update to 2.71:
+
+![missing-latest-bios](https://user-images.githubusercontent.com/46293832/147849676-e9a2d009-20ca-4691-9044-ba655101671a.png)
+
+in order to update to 2.78 which is the supported version used in this repository, I've scraped their website to find the file I've downloaded on April 2021. In [this file](https://github.com/1alessandro1/HP-Prodesk-600-G1-SFF-macOS/blob/main/Bios-Dumps/README-for-BIOS-source.txt) you can see the HTTPS and FTP link to the `.exe` which has the ROM images to update.
+
+For additional security, here's the SHA-256 checksum of the file:
+
+```
+bb6b711aa093f3c97525bedeb64df81ecc558b3a07cb946db9febf2eb8875619  BIOS-2.78-sp103785.exe (present in this repo)
+bb6b711aa093f3c97525bedeb64df81ecc558b3a07cb946db9febf2eb8875619  sp103785.exe (downloaded from HP on 01/01/2022
+```
+
 There are screenshots to document what are the necessary BIOS settings for this PC, check them [here](https://github.com/1alessandro1/HP-Prodesk-600-G1-SFF-macOS/tree/main/Bios-Dumps/Pictures-Settings) or by cloning the repository 
 
 ## Additional hidden BIOS settings
