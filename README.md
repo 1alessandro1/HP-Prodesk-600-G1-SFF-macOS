@@ -75,7 +75,7 @@ Must have to boot:
 * OpenRuntime.efi (bundled in [OpenCore package](https://github.com/acidanthera/OpenCorePkg/releases/latest))
 
 Optional Drivers:
-* NvmExpressDxe.efi (bundled in OpenCore package) for those of you who opt to install an NVMe to a PCIE to M.2 converter, Intel `7/8 Series` chipsets do not have this in their firmware
+* NvmExpressDxe.efi (bundled in OpenCore package) for those of you who opt to install an NVMe inside a PCIE to M.2 converter, Intel `7/8 Series` chipsets do not have this in their firmware
 * AudioDxe.efi if you want `BootChime` support (added in the latest release)
 
 
