@@ -15,14 +15,14 @@ This repository contains the necessary files and information to successfully boo
 
 | Component      | Brand                                     |
 |----------------|-------------------------------------------|
-| **CPU**        | `Intel Core i5-4590 @ 3.3 GHz`            |
-| **Chipset**    | `Intel Q85`                               |
-| **iGPU**       | `Intel HD Graphics 4600 - Haswell`        |
-| **Storage**    | `Crucual NVMe 250GB`                      |
-| **Audio**      | `Realtek ALC221 - layout 11`              |
-| **Ethernet**   | `Intel I217LM`                            |
-| **OS**         | `macOS Monterey 12.2 (21D5025f)`          |
-| **BIOS**       | `2.78 - 29 April 2020`                    |
+| **CPU**        |  Intel Core i5-4590 @ 3.3 GHz             |
+| **Chipset**    |  Intel Q85                                |
+| **iGPU**       |  Intel HD Graphics 4600 - Haswell         |
+| **Storage**    |  WD SN750 NVMe 512GB                      |
+| **Audio**      |  Realtek ALC221 - layout 11               |
+| **Ethernet**   |  Intel I217LM Gigabit Ethernet            |
+| **OS**         |  macOS Monterey 12.2 (21D5025f)           |
+| **BIOS**       |  2.78 - 29 April 2020                     |
 
 
 ## Important notes
