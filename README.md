@@ -4,7 +4,7 @@
 
 
 This repository contains the necessary files and information to successfully boot macOS on this prebuilt PC. 
-- Bootloader version: **OpenCore 0.7.6**
+- Bootloader version: **OpenCore 0.7.9**
 - Kexts version: everything up-to-date with the latest version (check the links below)
 - Current macOS version: [Monterey 12.1](https://www.apple.com/macos/monterey) - Release channel
 - I chose `iMac15,1` since provides support for Big Sur and is the closest to the CPU model (i5 4590 is installed [on an official Mac](https://everymac.com/systems/apple/imac/specs/imac-core-i5-3.3-27-inch-aluminum-retina-5k-mid-2015-specs.html))
