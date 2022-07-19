@@ -3,9 +3,9 @@
 ![Screenshot 2022-07-19 at 18 03 25](https://user-images.githubusercontent.com/46293832/179799249-bab30a7a-d4f7-484b-baf0-40ab43fc2e5f.png)
 
 This repository contains the necessary files and information to successfully boot macOS on this prebuilt PC. 
-- Bootloader version: **OpenCore 0.7.9**
+- Bootloader version: **OpenCore 0.8.2**
 - Kexts version: everything up-to-date with the latest version (check the links below)
-- Current macOS version: [Monterey 12.1](https://www.apple.com/macos/monterey) - Release channel
+- Current macOS version: [Monterey 12.4](https://www.apple.com/macos/monterey) - Release channel
 - I chose `iMac15,1` since provides support for Big Sur and is the closest to the CPU model (i5 4590 is installed [on an official Mac](https://everymac.com/systems/apple/imac/specs/imac-core-i5-3.3-27-inch-aluminum-retina-5k-mid-2015-specs.html))
 - With a different SMBIOS, e.g. `iMac14,4`, which supports even lower versions of macOS, you [can install](https://youtu.be/o6cdezPEF3A) up to OS X Mavericks (10.9) and with `iMac16,1` you can boot macOS 12 Monterey.
 - With `IntelSnowMausi.kext` now present in the Kext folder with the correct `MinKernel/MaxKernel` values you can even try macOS 10.8 which is the lowest supported by most kexts (Darwin 12.0.0)
