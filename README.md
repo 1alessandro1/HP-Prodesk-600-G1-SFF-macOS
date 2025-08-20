@@ -113,3 +113,6 @@ Optional Drivers:
 * [dortania](https://github.com/dortania) team for its detailed guides
 * [Corpnewt](https://github.com/CorpNewt) for SSDTTime and [fewtarius](https://github.com/fewtarius) for CPUFriend fork
 * [Acidanthera](https://github.com/Acidanthera) for OpenCore and Lilu-based kexts 
+
+
+[![Star History Chart](https://app.repohistory.com/api/svg?repo=1alessandro1/HP-Prodesk-600-G1-SFF-macOS&type=Date&background=0D1117&color=f86262)](https://app.repohistory.com/star-history)
